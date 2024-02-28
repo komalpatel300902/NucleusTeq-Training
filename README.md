@@ -1,6 +1,6 @@
 ## Introduction
 
-Hello everyone :smile: , this repository holds all my work which I did during the training session provided by NucleusTeq. 
+Hello everyone :smile: , this repository holds all my work which I did during the training session provided by **NucleusTeq**. 
 
 ## Index
 1. **[Introduction](#introduction)**
@@ -24,4 +24,11 @@ Hello everyone :smile: , this repository holds all my work which I did during th
 
 
 ## Day 3 Sql Basics
+Sql stands for Structured query language. It is used for storing , modefing and maintaining data.
 
+| Leetcode Question | Answers |
+|-------------------|---------|
+[Combine Two Tables](https://leetcode.com/problems/combine-two-tables/submissions/1188306822/) | [Solution](src/sql/combine_two_tables.sql)|
+|[Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/description/)|[Solution](src/sql/employees_earning_more_than_their_managers.sql)|
+|[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/description/)|[Solution](src/sql/dublicate_emails.sql)|
+|[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/description/)|[Solution](src/sql/customer_who_never_order.sql)|
