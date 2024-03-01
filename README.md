@@ -23,7 +23,14 @@ Hello everyone :smile: , this repository holds all my work which I did during th
 
 | Linux Practice |
 |----------------|
-|[Echo statement](src/linux/echo_statement.sh)
+|[Echo statement](src/linux/echo_statement.sh)|
+|[variables](src/linux/working_with_variable.sh)|
+|[if-else statement](src/linux/if_else_statement.sh)|
+|[reading input](src/linux/reading_input.sh)|
+|[for-loop](src/linux/for_loop_statement.sh)|
+|[for-loop using string](src/linux/for_loop_for_string.sh)|
+|[while loop](src/linux/while_loop_statement.sh)|
+
 
 
 
