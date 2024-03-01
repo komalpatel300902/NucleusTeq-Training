@@ -21,6 +21,10 @@ Hello everyone :smile: , this repository holds all my work which I did during th
 1. `kernal` : It is a program which has total conrol over operating system. In other terms all the process is handled by kernal.
 1. `Shell` : It is a user Interface which allows user to interact with the operating system. 
 
+| Linux Practice |
+|----------------|
+|[Echo statement](src/linux/echo_statement.sh)
+
 
 
 ## Day 3 Sql Basics
