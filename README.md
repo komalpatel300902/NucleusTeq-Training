@@ -182,9 +182,120 @@ Query : `SELECT name FROM names ORDER BY name;`
 |C_20|
 |C_3|
 
+</details>
+<details>
+<summary><b>Joins</b></summary>
+
+customer_id Table
+|id	|
+|--|
+|1|
+|2|
+|3|
+|NULL|
+|5|
+|1|
+|16|
+|14|
+|12|
+|3|
+
+id_list Table
+|id|name|
+|----|----|	
+|1|a|
+|2|b|
+|3|c|
+|5|x|
+|2|m|
+|6|j|
+|1|z|
+|NULL|L|
+
+INNER JOIN
+Query : `SELECT * FROM customer_id AS c 
+INNER JOIN id_list AS i
+ON c.id = i.id;
+`  
+id | id |name|
+|--|--|--|
+|1 |1 |a|
+|1 |1 |z|
+|2 |2 |b|
+|2 |2 |m|
+|3 |3 |c|
+|5 |5 |x|
+|1 |1 |a|
+|1 |1 |z|
+|3 |3 |c|
+
+LEFT JOIN
+Query : `SELECT * FROM customer_id AS c 
+LEFT JOIN id_list AS i
+ON c.id = i.id;
+` 
+|id|id|name|
+|--|--|-|
+|1 |1 |a|
+|1 |1 |a|
+|2 |2 |b|
+|3 |3 |c|
+|3 |3 |c|
+|5 |5 |x|
+|2 |2 |m|
+|1 |1 |z|
+|1 |1 |z|
+|NULL| NULL |NULL|
+|16| NULL |NULL|
+|14| NULL |NULL|
+|12| NULL |NULL|
+
+RIGHT JOIN
+Query : `SELECT * FROM customer_id AS c 
+RIGHT JOIN id_list AS i
+ON c.id = i.id;
+` 
+|id|id|name|
+|--|--|-|
+|1| 1| a|
+|1| 1| z|
+|2| 2| b|
+|2| 2| m|
+|3| 3| c|
+|5| 5| x|
+|1| 1| a|
+|1| 1| z|
+|3| 3| c|
+|NULL| 6 |j|
+|NULL| NULL |L|
+
+OUTER JOIN 
+
+Query : `SELECT * FROM   customer_id AS c 
+RIGHT JOIN id_list AS i
+ON c.id = i.id
+UNION
+SELECT * FROM customer_id AS c 
+LEFT JOIN id_list AS i
+ON c.id = i.id;
+`
+|id|id|name|
+|--|--|-|
+|1 |1| a|
+|1 |1| z|
+|2 |2| b|
+|2 |2| m|
+|3 |3| c|
+|5 |5| x|
+|NULL| 6 j|
+|NULL| NULL| L|
+|NULL| NULL| NULL|
+|16 |NULL| NULL|
+|14 |NULL| NULL|
+|12 |NULL| NULL|
 
 
-
+Note : `In c.id = i.id Null values will not be compared as it represent absense of value.`
 </details>
 
 | Leetcode Question | Answers |
