@@ -30,7 +30,34 @@ Hello everyone :smile: , this repository holds all my work which I did during th
 |[for-loop](src/linux/for_loop_statement.sh)|
 |[for-loop using string](src/linux/for_loop_for_string.sh)|
 |[while loop](src/linux/while_loop_statement.sh)|
+|[Associated Array](src/linux/assoc_array.sh)|
+|[Command Line Argument](src/linux/command_line_argument.sh)|
+|[Function with Parameter](src/linux/function_with_parameter.sh)|
+|[Indexed Array](src/linux/index_array.sh)|
+|[Listing Files](src/linux/listing_files.sh)|
+|[Nested While Loop](src/linux/nested_while_loop.sh)|
+|[Reading character of String](src/linux/read_each_char_of_input.sh)|
+|[Reading Files](src/linux/reading_file.sh)|
+|[Square Pattern](src/linux/square_pattern.sh)|
 
+<details>
+<summary>Array</summary>
+
+There are two types of array : 
+Associated Array : `declare -A assoc_array`   
+- Associate array work with key value pair similar to dictionary in python.   
+- Accessing element : `assoc_array[key]`.
+- listing keys : `${!acco_array[@]}`
+
+Indexed Array : `declare -a index_array`  
+- Index array work with index values similar to list in python.
+- Accessing element : `assoc_array[index]`.
+
+Common in both Arrays :  
+- Printing all values inside the list : `array_name[@]`
+- Length of the list : `${#array_name[@]}`
+
+</details>
 
 
 
