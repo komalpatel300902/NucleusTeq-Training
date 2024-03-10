@@ -1,0 +1,10 @@
+SELECT DISTINCT(b1.N), 
+CASE
+    WHEN b1.P IS NULL THEN "Root"
+    WHEN b1.P IS NOT NULL AND b2.N IS NOT NULL THEN "Inner"
+    ELSE "Leaf"
+END AS category 
+FROM bst b1
+LEFT JOIN bst b2
+ON b1.N = b2.P 
+ORDER BY b1.N;

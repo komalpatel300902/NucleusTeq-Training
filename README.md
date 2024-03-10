@@ -40,6 +40,18 @@ Hello everyone :smile: , this repository holds all my work which I did during th
 |[Reading Files](src/linux/reading_file.sh)|
 |[Square Pattern](src/linux/square_pattern.sh)|
 
+|HACKER RANK | CODE|
+|------------|-----|
+|[odd natural numbers](https://www.hackerrank.com/challenges/bash-tutorials---looping-and-skipping/problem?isFullScreen=true)|[Solution](src/linux/odd_natural_number.sh)|
+|[A Personalized Echo](https://www.hackerrank.com/challenges/bash-tutorials---a-personalized-echo/problem?isFullScreen=true)|[Solution](src/linux/persionalised_echo.sh)|
+|[Looping with Numbers](https://www.hackerrank.com/challenges/bash-tutorials---looping-with-numbers/problem?isFullScreen=true)|[Solution](src/linux/looping_with_number.sh)|
+|[The World of Numbers](https://www.hackerrank.com/challenges/bash-tutorials---the-world-of-numbers/problem?isFullScreen=true)|[Solution](src/linux/the_world_of_number.sh)|
+|[Comparing Numbers](https://www.hackerrank.com/challenges/bash-tutorials---comparing-numbers/problem?isFullScreen=true)|[Solution](src/linux/comparing_number.sh)|
+|[Getting started with conditionals](https://www.hackerrank.com/challenges/bash-tutorials---getting-started-with-conditionals/problem?isFullScreen=true)|[Solution](src/linux/getting_started_with_condition.sh)|
+|[More on Conditionals](https://www.hackerrank.com/challenges/bash-tutorials---more-on-conditionals/problem?isFullScreen=true)|[Solution](src/linux/more_on_condition.sh)|
+|[Middle of a Text File](https://www.hackerrank.com/challenges/text-processing-in-linux---the-middle-of-a-text-file/problem?isFullScreen=true)|[Solution](src/linux/middle_of_a_text_file.sh)|
+|[Tail of a Text File #1](https://www.hackerrank.com/challenges/text-processing-tail-1/problem?isFullScreen=true)|[Solution](src/linux/tail_of_a_text_file.sh)|
+
 <details>
 <summary>Array</summary>
 
@@ -332,3 +344,10 @@ Note : `In c.id = i.id Null values will not be compared as it represent absense 
 |[Duplicate Emails](https://leetcode.com/problems/duplicate-emails/description/)|[Solution](src/sql/dublicate_emails.sql)|
 |[Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/description/)|[Solution](src/sql/customer_who_never_order.sql)|
 |[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/description/)|[Solution]()|
+|[Rank Scores](https://leetcode.com/problems/rank-scores/description/)|[Solution](src/sql/rank_score.sql)|
+|[Customer Placing the Largest Number of Orders](https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/description/)|[Solution](src/sql/customer_placing_largest_number_of_orders.sql)|
+
+
+|Hacker Rank |Code|
+|------------|---|
+|[Binary Tree Nodes](https://www.hackerrank.com/challenges/binary-search-tree-1/problem?isFullScreen=true)|[Solution](src/sql/binary_tree_node.sql)|
