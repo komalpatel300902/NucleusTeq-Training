@@ -278,3 +278,4 @@ Note : `In c.id = i.id Null values will not be compared as it represent absense 
 |Hacker Rank |Code|
 |------------|---|
 |[Binary Tree Nodes](https://www.hackerrank.com/challenges/binary-search-tree-1/problem?isFullScreen=true)|[Solution](src/sql/binary_tree_node.sql)|
+|[Placements](https://www.hackerrank.com/challenges/placements/problem?isFullScreen=true)|[Solutions](src/sql/placement.sql)

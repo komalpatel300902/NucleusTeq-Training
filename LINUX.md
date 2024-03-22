@@ -22,6 +22,10 @@
 |[Reading character of String](src/linux/read_each_char_of_input.sh)|
 |[Reading Files](src/linux/reading_file.sh)|
 |[Square Pattern](src/linux/square_pattern.sh)|
+|[Febonacci Series](src/linux/febonacci_series.sh)|
+|[Reading text file](src/linux/reading_text_file.sh)|
+
+
 
 |HACKER RANK | CODE|
 |------------|-----|
@@ -34,7 +38,11 @@
 |[More on Conditionals](https://www.hackerrank.com/challenges/bash-tutorials---more-on-conditionals/problem?isFullScreen=true)|[Solution](src/linux/more_on_condition.sh)|
 |[Middle of a Text File](https://www.hackerrank.com/challenges/text-processing-in-linux---the-middle-of-a-text-file/problem?isFullScreen=true)|[Solution](src/linux/middle_of_a_text_file.sh)|
 |[Tail of a Text File #1](https://www.hackerrank.com/challenges/text-processing-tail-1/problem?isFullScreen=true)|[Solution](src/linux/tail_of_a_text_file.sh)|
-|[Cut](https://www.hackerrank.com/challenges/text-processing-cut-4/problem)|[Solution](src/linux/cut_4.sh)
+|[Cut 4](https://www.hackerrank.com/challenges/text-processing-cut-4/problem)|[Solution](src/linux/cut_4.sh)|
+|[Cut #8](https://www.hackerrank.com/challenges/text-processing-cut-8/problem?isFullScreen=true)|[solution](src/linux/cut_8.sh)|
+|[Cut #9](https://www.hackerrank.com/challenges/text-processing-cut-9/problem)|[Solution](src/linux/cut_9.sh)|
+|[Compute the Average](https://www.hackerrank.com/challenges/bash-tutorials---compute-the-average/problem?isFullScreen=true)|[Solution](src/linux/compute_the_average.sh)|
+|[Arithmetic Operations](https://www.hackerrank.com/challenges/bash-tutorials---arithmetic-operations/problem?isFullScreen=true)|[Solution](src/linux/arithemetic_operator.sh)
 
 <details>
 <summary>Array</summary>

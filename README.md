@@ -8,6 +8,8 @@ Hello everyone :smile: , this repository holds all my work which I did during th
 1. **[Day 2 Linux](#day-2-linux)**
 1. **[Day 3 Sql Basics](#day-3-sql-basics)**
 1. **[Day 4 Python](#day-4-python)**
+1. **[Day 5 Java](#day-5-java)**
+
 ## Day 1 Git and Github
 ### Git
 - Git is a version control system that is used to track the changes that we do in a file.
@@ -163,3 +165,17 @@ Python is a open source , interpreted language that is used in various field suc
 |[Check Strict Superset](https://www.hackerrank.com/challenges/py-check-strict-superset/problem?isFullScreen=true)|[Solution](src/python/check_strict_superset.py)|
 
 For More : [Click Here](PYTHON.md)
+
+## Day 5 Java
+
+Java is a open source programming language that is used in various fields such as Software development etc ..
+
+|Practice|
+|--------|
+|[Hello World](src/javafiles/HelloWorld.java)|
+|[Creating File](src/javafiles/filehandling/CreateFile.java)|
+|[Reading File](src/javafiles/filehandling/ReadingFile.java)|
+|[Writing in File](src/javafiles/filehandling/WritingInFile.java)|
+[Iterable in Java](src/javafiles/IteratorForClass.java)
+
+For More : [Click Here](JAVA.md)
