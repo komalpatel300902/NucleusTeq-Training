@@ -1,6 +1,9 @@
 ## Introduction
 
-Hello everyone :smile: , this repository holds all my work which I did during the training session provided by **NucleusTeq**. 
+Hello everyone :smile: , this repository holds all my work which I did during the training session provided by **NucleusTeq**.
+
+<a href = "https://leetcode.com/komal_patel/"><img src ="images/LeetCode.png" width = "42" alt = "LeetCode" style = "border-radius: 50%"> </a>
+<a href = "https://www.hackerrank.com/profile/komal14march2002"><img src ="images/Hackerrank.png" width = "42" alt = "LeetCode" style = "border-radius: 50%"> </a>
 
 ## Index
 1. **[Introduction](#introduction)**
@@ -9,6 +12,8 @@ Hello everyone :smile: , this repository holds all my work which I did during th
 1. **[Day 3 Sql Basics](#day-3-sql-basics)**
 1. **[Day 4 Python](#day-4-python)**
 1. **[Day 5 Java](#day-5-java)**
+1. **[Pandas and SQL](#pandas-and-sql)**
+1. **[Assignments](#assignments)**
 
 ## Day 1 Git and Github
 ### Git
@@ -179,3 +184,39 @@ Java is a open source programming language that is used in various fields such a
 [Iterable in Java](src/javafiles/IteratorForClass.java)
 
 For More : [Click Here](JAVA.md)
+
+## Pandas and Sql
+
+|leetcode|SQL | Pandas|
+|--------|----|-------|
+|[Department Highest Salary](https://leetcode.com/problems/department-highest-salary/description/?lang=pythondata)|[Solution](src/sql/department_highest_salary.sql)|[Solution](src/python/department_highest_salary.py)|
+|[Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/description/?lang=pythondata)|[Solution](src/sql/department_top_three_salary.sql)|[Solution](src/python/department_top_three_highest_salary.py)|
+|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/description/?lang=pythondata)|[Solutions](src/sql/delete_dublicate_emails.sql)  |[Solution](src/python/delete_duplicate_email.py)|
+|[Trips and Users](https://leetcode.com/problems/trips-and-users/description/?lang=pythondata)| |[Solutions](src/python/trip_and_users.py)|
+
+## Assignments
+
+<details>
+<summary><b>Assignment 1</b></summary>
+<br>
+
+**Problem Statement** : Your company employs 200 people. They keep records of all the employee information in the *`Employees.csv`* file, which contains the following columns: first name, last name, department, position, and salary. However, they would like to sort the data; first, they would like to group the rows by department lexicographically, and then they would like to sort the rows by salary.
+you have been assigned to create a Java application that is capable of carrying out this task.     
+
+**Dataset** : [**open**](src/python/pandas_library/Employees.csv)
+
+</details>
+
+<details>
+<summary><b>Assignment 2</b></summary>
+<br>
+
+**Problem Statement** : You have a file that stores data about players' scores they achieved in different matches against different teams at different points in time, You have to identify the highest score of each player among all the matches
+If the entry is only a string that is the name of the player, and if the entry is pak_55_01_nov that implies the match against Pakistan scored 55 runs on November first.
+     
+
+**Dataset** : [**open**](src/python/pandas_library/Scores.csv)
+
+Answer : [**Solution Code**](src/python/pandas_library/assignment_II.ipynb)
+
+</details>

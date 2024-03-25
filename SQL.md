@@ -273,7 +273,9 @@ Note : `In c.id = i.id Null values will not be compared as it represent absense 
 |[Rank Scores](https://leetcode.com/problems/rank-scores/description/)|[Solution](src/sql/rank_score.sql)|
 |[Customer Placing the Largest Number of Orders](https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/description/)|[Solution](src/sql/customer_placing_largest_number_of_orders.sql)|
 |[Average Time of Process per Machine](https://leetcode.com/problems/average-time-of-process-per-machine/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/average_time_of_process_per_machine.sql)
-
+|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/description/?lang=pythondata)|[Solution](src/sql/second_highest_salary.sql)|
+|[Department Higheat Salary](https://leetcode.com/problems/department-highest-salary/description/?lang=pythondata)|[Solution](src/sql/department_highest_salary.sql)|
+|[Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/description/?lang=pythondata)|[Solution](src/sql/department_top_three_salary.sql)|
 
 |Hacker Rank |Code|
 |------------|---|

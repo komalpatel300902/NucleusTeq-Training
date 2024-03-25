@@ -337,3 +337,13 @@ OUTPUT
 |[concatination in pandas](src/python/pandas_library/concatination_in_pandas.ipynb)|
 |[csv file data Extraction](src/python/pandas_library/extraction_from_car_data.ipynb)|
 |[Merge in pandas](src/python/pandas_library/mearge_testcase.ipynb)|
+
+|Leetcode|Code|
+|--------|----|
+|[Combine Two Table](https://leetcode.com/problems/combine-two-tables/submissions/1211055254/?lang=pythondata)|[Solution](src/python/combine_two_tables.py)|
+|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/description/?lang=pythondata)|[Solution](src/python/second_highest_salary.py)|
+|[Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/submissions/1211703191/?lang=pythondata)|[Solution](src/python/n_highest_salary.py)|
+|[Rank Scores](https://leetcode.com/problems/rank-scores/description/?lang=pythondata)|[Solution](src/python/rank_scores.py)|
+|[Department Highest Salary](https://leetcode.com/problems/department-highest-salary/description/?lang=pythondata)|[Solution](src/python/department_highest_salary.py)|
+|[Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/description/?lang=pythondata)|[Solution](src/python/department_top_three_highest_salary.py)|
+|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/description/?lang=pythondata)|[Solution](src/python//delete_duplicate_email.py)|

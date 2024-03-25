@@ -47,7 +47,8 @@
 <details>
 <summary>Array</summary>
 
-There are two types of array : 
+There are two types of array :     
+
 Associated Array : `declare -A assoc_array`   
 - Associate array work with key value pair similar to dictionary in python.   
 - Accessing element : `assoc_array[key]`.
