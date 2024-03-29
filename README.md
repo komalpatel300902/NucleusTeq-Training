@@ -8,7 +8,9 @@ Hello everyone :smile: , this repository holds all my work which I did during th
 <a href = "https://www.hackerrank.com/profile/komal14march2002"><img src ="images/Hackerrank.png" width = "42" alt = "LeetCode" style = "border-radius: 50%"> </a>
 
 **Pinned**   
-[**Greek Gods Assignment**](src/python/pandas_library/greek_gods_exam.ipynb)
+1. [**Greek Gods Assignment**](src/python/pandas_library/greek_gods_exam.ipynb)
+
+1. [**mysql Connection using Python**](PYTHON.md#mysql-connection-using-python)
 
 ## Index
 1. **[Introduction](#introduction)**
