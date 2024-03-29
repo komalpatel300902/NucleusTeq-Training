@@ -2,8 +2,13 @@
 
 Hello everyone :smile: , this repository holds all my work which I did during the training session provided by **NucleusTeq**.
 
+
+
 <a href = "https://leetcode.com/komal_patel/"><img src ="images/LeetCode.png" width = "42" alt = "LeetCode" style = "border-radius: 50%"> </a>
 <a href = "https://www.hackerrank.com/profile/komal14march2002"><img src ="images/Hackerrank.png" width = "42" alt = "LeetCode" style = "border-radius: 50%"> </a>
+
+**Pinned**   
+[**Greek Gods Assignment**](src/python/pandas_library/greek_gods_exam.ipynb)
 
 ## Index
 1. **[Introduction](#introduction)**
@@ -193,9 +198,19 @@ For More : [Click Here](JAVA.md)
 |[Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/description/?lang=pythondata)|[Solution](src/sql/department_top_three_salary.sql)|[Solution](src/python/department_top_three_highest_salary.py)|
 |[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/description/?lang=pythondata)|[Solutions](src/sql/delete_dublicate_emails.sql)  |[Solution](src/python/delete_duplicate_email.py)|
 |[Trips and Users](https://leetcode.com/problems/trips-and-users/description/?lang=pythondata)| |[Solutions](src/python/trip_and_users.py)|
+|[Consecutive Number](https://leetcode.com/problems/consecutive-numbers/submissions/1214194127/?lang=pythondata)||[Solution](src/python/consicutive_number.py)|
+|[Customer Who bought All the Product](https://leetcode.com/problems/customers-who-bought-all-products/submissions/1214236054/?lang=pythondata)||[Solution](src/python/customer_who_bought_all_the_product.py)|
+|[Project Employees I](https://leetcode.com/problems/project-employees-i/description/?lang=pythondata)||[Solution](src/python/project_employee_I.py)|
 
 ## Assignments
+<details>
+<summary><b>Assignment 1 : Greeks Gods</b></summary>
 
+[**Greeks God Dataset**](src/python/pandas_library/greek_god.csv)    
+[**Greeks Goddess Dataset**](src/python/pandas_library/greek_god.csv)
+
+**My Answer** : [Open](src/python/pandas_library/greek_gods_exam.ipynb)
+</details>
 <details>
 <summary><b>Assignment 1</b></summary>
 <br>
