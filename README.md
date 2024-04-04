@@ -12,6 +12,8 @@ Hello everyone :smile: , this repository holds all my work which I did during th
 
 1. [**mysql Connection using Python**](PYTHON.md#mysql-connection-using-python)
 
+1. [**MapReduce**](#assignments) **: -> Index->Assignments-> Assignment3 : Map Reduce**
+
 ## Index
 1. **[Introduction](#introduction)**
 1. **[Day 1 Git and Github](#day-1-git-and-github)**
@@ -203,6 +205,9 @@ For More : [Click Here](JAVA.md)
 |[Consecutive Number](https://leetcode.com/problems/consecutive-numbers/submissions/1214194127/?lang=pythondata)||[Solution](src/python/consicutive_number.py)|
 |[Customer Who bought All the Product](https://leetcode.com/problems/customers-who-bought-all-products/submissions/1214236054/?lang=pythondata)||[Solution](src/python/customer_who_bought_all_the_product.py)|
 |[Project Employees I](https://leetcode.com/problems/project-employees-i/description/?lang=pythondata)||[Solution](src/python/project_employee_I.py)|
+|[Count Salary Categories](https://leetcode.com/problems/count-salary-categories/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/count_salary_categories.sql)||
+|[Product Price at a Given Date](https://leetcode.com/problems/product-price-at-a-given-date/description/?envType=study-plan-v2&envId=top-sql-50)||[Solution](src/python/product_price_at_given_data.py)|
+|[Sales Person](https://leetcode.com/problems/sales-person/description/?lang=pythondata)||[SOlutions](src/python/sale_person.py)|
 
 ## Assignments
 <details>
@@ -236,4 +241,67 @@ If the entry is only a string that is the name of the player, and if the entry i
 
 Answer : [**Solution Code**](src/python/pandas_library/assignment_II.ipynb)
 
+</details>
+<details>
+<summary><b>Assignment 3 : MapReduce</b></summary>
+
+Dataset : [Open](src/python/assignment_dataset.txt)  
+Maper File : [Open](src/python/assignment_mapper.py)  
+Reduce File : [Open](src/python/assignment_reducer.py)
+
+```bash
+komal@komal-VirtualBox:~/NucleusTeq-Training/src/python$ cat assignment_dataset.txt | python3 assignment_mapper.py | sort -k 1,1 | python3 assignment_reducer.py 
+```
+**OUTPUT**
+```
+a 3
+all 1
+All 1
+be 2
+brown 1
+by 1
+chuck 2
+could 1
+cream 1
+dog 1
+ends 1
+for 1
+fox 1
+How 1
+I 1
+ice 1
+if 1
+is 1
+jumps 1
+lazy 1
+much 1
+not 1
+of 1
+or 1
+over 1
+peck 1
+peppers 1
+Peter 1
+picked 1
+pickled 1
+Piper 1
+question 1
+quick 1
+scream 3
+seashells 1
+seashore 1
+sells 1
+She 1
+that 2
+the 3
+The 1
+to 1
+To 1
+we 1
+well 2
+wood 2
+woodchuck 2
+would 1
+you 1
+```
 </details>
