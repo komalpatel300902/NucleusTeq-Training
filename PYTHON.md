@@ -19,11 +19,20 @@ Python is a open source , interpreted language that is used in various field suc
 |[Iterators](src/python/iterations_in_python.py)|
 |[Class Method](src/python/class_method_in_python.py)|
 
+|LeetCode| Code |
+|--------|------|
+|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/description/)|[Solution](src/python/zigzag_convresion.py)|
+|[Longest Substring](https://leetcode.com/problems/zigzag-conversion/description/)| [Solution](src/python/longest_substring.py)|
+|[Remove Element](https://leetcode.com/problems/remove-element/description/)|[Solution](src/python/remove_element.py)|
+[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)|[Solution](src/python/remove_duplicate_from_sorted_array.py)|
+
 |Hacker Rank| Code |
 |-----------|------|
 |[Check Strict Superset](https://www.hackerrank.com/challenges/py-check-strict-superset/problem?isFullScreen=true)|[Solution](src/python/check_strict_superset.py)|
 |[Triangle Quest](https://www.hackerrank.com/challenges/python-quest-1/problem?isFullScreen=true)|[Solution](src/python/tringle_quest.py)|
 |[Mutations](https://www.hackerrank.com/challenges/python-mutations/problem?isFullScreen=true)|[Solution](src/python/mutation.py)|
+|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/)|[Solution](src/python/longest_common_prefix.py)|
+
 
 
 [Try Except](src/python/try_except_block_no_1.py)  
@@ -40,7 +49,14 @@ Python is a open source , interpreted language that is used in various field suc
 [ArithmeticError](src/python/exceptionsinpython/arithmetic_exceptions.py)
 
 ### REGEXP
-[]()
+|Hacker Rank|Code|
+|-----------|----|
+[Valid PAN format](https://www.hackerrank.com/challenges/valid-pan-format/problem?isFullScreen=true)|[Solution](src/python/regularexpression/valid_pan_format.py)|
+|[Find HackerRank](https://www.hackerrank.com/challenges/find-hackerrank/problem?isFullScreen=true)|[Solution](src/python/regularexpression/find_hackerrank.py)|
+|[Saying Hi](https://www.hackerrank.com/challenges/saying-hi/problem?isFullScreen=true)|[Solution](src/python/regularexpression/saying_hi.py)|
+|[HackerRank Language](https://www.hackerrank.com/challenges/hackerrank-language/problem?isFullScreen=true)|[Solution](src/python/regularexpression/hackerrank_language.py)|
+
+     
 We use ```re``` python library for matching patterns.
 ```python
 import re
