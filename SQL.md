@@ -276,8 +276,19 @@ Note : `In c.id = i.id Null values will not be compared as it represent absense 
 |[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/description/?lang=pythondata)|[Solution](src/sql/second_highest_salary.sql)|
 |[Department Higheat Salary](https://leetcode.com/problems/department-highest-salary/description/?lang=pythondata)|[Solution](src/sql/department_highest_salary.sql)|
 |[Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/description/?lang=pythondata)|[Solution](src/sql/department_top_three_salary.sql)|
+|[Project Employees I](https://leetcode.com/problems/project-employees-i/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/project_employees_I.sql)|
+|[Percentage of Users Attended a Contest](https://leetcode.com/problems/percentage-of-users-attended-a-contest/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/placement_cell.sql)|
+|[Queries Quality and Percentage](https://leetcode.com/problems/queries-quality-and-percentage/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/query_quality_and_percentage.sql)|
+|[Average Selling Price](https://leetcode.com/problems/average-selling-price/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/average_selling_price.sql)|
+|[Biggest Single Number](https://leetcode.com/problems/biggest-single-number/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/biggest_single_number.sql)|
+|[The Number of Employees Which Report to Each Employee](https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/the_number_of_employee.sql)|
+|[Primary Department for Each Employee](https://leetcode.com/problems/primary-department-for-each-employee/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/primary_department_for_each_employee.sql)|
+|[Employees Whose Manager Left the Company](https://leetcode.com/problems/employees-whose-manager-left-the-company/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/employee_whose_manager_left_the_company.sql)|
+|[Fix Names in a Table](https://leetcode.com/problems/fix-names-in-a-table/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/fix_name_in_table.sql)|
+|[Patients With a Condition](https://leetcode.com/problems/patients-with-a-condition/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/patients_with_condition.sql)|
+|[List the Products Ordered in a Period](https://leetcode.com/problems/list-the-products-ordered-in-a-period/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/list_of_product_ordered_in_a_period.sql)|
 
 |Hacker Rank |Code|
 |------------|---|
 |[Binary Tree Nodes](https://www.hackerrank.com/challenges/binary-search-tree-1/problem?isFullScreen=true)|[Solution](src/sql/binary_tree_node.sql)|
-|[Placements](https://www.hackerrank.com/challenges/placements/problem?isFullScreen=true)|[Solutions](src/sql/placement.sql)
+|[Placements](https://www.hackerrank.com/challenges/placements/problem?isFullScreen=true)|[Solutions](src/sql/placement.sql)|
