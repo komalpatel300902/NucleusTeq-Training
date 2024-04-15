@@ -198,6 +198,73 @@ For More : [Click Here](JAVA.md)
 ## Docker
 [Documentation Link ](https://docs.docker.com/get-started/02_our_app/)
 
+## 1. Creating Image Using Dockerfile
+
+[MY APP](src/docker/myapp/)
+
+#### Dockerfile
+``` docker
+FROM python:latest
+WORKDIR /app
+COPY . .
+EXPOSE 3000
+CMD ["python","main.py"]
+```
+#### bash $
+
+```bash
+root@komal-VirtualBox:/home/komal/NucleusTeq-Training/src/docker/myapp# docker build -t myapp:01 
+. 
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  3.072kB
+Step 1/5 : FROM python:latest
+:
+:
+Successfully built fa9120a7be03
+Successfully tagged myapp:01
+
+```
+```bash
+root@komal-VirtualBox:/home/komal/NucleusTeq-Training/src/docker/myapp# docker images
+REPOSITORY                TAG       IMAGE ID       CREATED          SIZE
+myapp                     01        fa9120a7be03   12 seconds ago   1.02GB
+third-demo                latest    24cdb97230c3   32 hours ago     1.02GB
+second-demo               latest    62350c0fe3eb   33 hours ago     1.02GB
+```
+#### Running the Image
+```bash
+root@komal-VirtualBox:/home/komal/NucleusTeq-Training/src/docker/myapp# docker run myapp:01
+Hello everyone !!!
+```
+#### Running Image in interactive Terminal Mode
+```bash
+root@komal-VirtualBox:/home/komal/NucleusTeq-Training/src/docker/myapp# docker run -it myapp:01 bash
+root@c588b3ef8955:/app# 
+```
+#### Files inside the Container
+```bash
+root@c588b3ef8955:/app# ls
+Dockerfile  main.py
+root@c588b3ef8955:/app# cd ..
+root@c588b3ef8955:/# ls
+app  boot  etc   lib    media  opt   root  sbin  sys  usr
+bin  dev   home  lib64  mnt    proc  run   srv   tmp  var
+root@c588b3ef8955:/# 
+```
+#### Seeing the Status of the Container
+```bash
+CONTAINER ID   IMAGE      COMMAND   CREATED         STATUS         PORTS      NAMES
+c588b3ef8955   myapp:01   "bash"    2 minutes ago   Up 2 minutes   3000/tcp   nervous_kare
+```
+#### Stoping the Container
+```bash
+root@komal-VirtualBox:/home/komal/NucleusTeq-Training# docker stop nervous_kare
+nervous_kare
+root@komal-VirtualBox:/home/komal/NucleusTeq-Training# 
+```
 
 ## Pandas and Sql
 
