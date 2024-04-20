@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+uvloop
+httptools==0.1.*
+websockets==12.0
+pymongo[srv]==3.8

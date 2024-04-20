@@ -1,0 +1,3 @@
+fastapi==0.110.1
+pydentic==2.7.0
+mysql-connector==2.2.9

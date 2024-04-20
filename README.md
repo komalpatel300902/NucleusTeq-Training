@@ -22,6 +22,7 @@ Hello everyone :smile: , this repository holds all my work which I did during th
 1. **[Python](#day-4-python)**
 1. **[Java](#day-5-java)**
 1. **[Docker](#docker)**
+1. **[Fast Api](#fast-api)**
 1. **[Pandas and SQL](#pandas-and-sql)**
 1. **[Assignments](#assignments)**
 
@@ -265,6 +266,52 @@ root@komal-VirtualBox:/home/komal/NucleusTeq-Training# docker stop nervous_kare
 nervous_kare
 root@komal-VirtualBox:/home/komal/NucleusTeq-Training# 
 ```
+#### Pushing Image to Docker hub
+[**My Docker Hub**](https://hub.docker.com/repository/docker/komal300902/myapp/)
+```bash
+root@komal-VirtualBox:/home/komal/NucleusTeq-Training# docker tag myapp:01 komal300902/myapp:01
+```
+```bash
+root@komal-VirtualBox:/home/komal/NucleusTeq-Training# docker push komal300902/myapp:01
+```
+
+
+## Fast API
+### Study Material 
+
+[YOUTUBE : FastAPI and MongoDB Connection | Channel Name : Eric Roby ](https://youtu.be/QkGqjPFIGCA?si=KU6rj2wynEWrjwg8)  
+[YOUTUBE : FastAPI Course | Channel Name : Bitfumes ](https://youtu.be/7t2alSnE2-I?si=XtAPQ1vvthdnoF68)   
+[FastAPI VS RouterAPI ](https://youtu.be/D-3JJLpECGQ?si=FZ_YQ07plJFTa4Iu)
+
+
+#### FastAPI and MongoDB Connection 
+
+```python
+from pymongo.mongo_client import MongoClient
+uri = "mongodb+srv://root:root@mycluster.jtujc9h.mongodb.net/?retryWrites=true&w=majority&appName=MyCluster"
+# Create a new client and connect to the server
+client = MongoClient(uri)
+# Send a ping to confirm a successful connection
+try:
+    client.admin.command('ping')
+    print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+    print(e)
+
+```
+```bash
+WARNING:  StatReload detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13590]
+Pinged your deployment. You successfully connected to MongoDB!
+INFO:     Started server process [13646]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+
+```
+
 
 ## Pandas and Sql
 
