@@ -1,8 +1,8 @@
-import mysql.connector as sql
+import mysql.connector as sql_connector
 
 try:
-    s = sql.connect(host = "localhost",user = "root", passwd = "", database = "nucleus_teq")
-    cursor = s.cursor()
+    sql = sql_connector.connect(host = "localhost",user = "root", passwd = "", database = "nucleus_teq")
+    cursor = sql.cursor()
 except Exception as e:
     print(e)
 else:

@@ -287,6 +287,8 @@ Note : `In c.id = i.id Null values will not be compared as it represent absense 
 |[Fix Names in a Table](https://leetcode.com/problems/fix-names-in-a-table/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/fix_name_in_table.sql)|
 |[Patients With a Condition](https://leetcode.com/problems/patients-with-a-condition/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/patients_with_condition.sql)|
 |[List the Products Ordered in a Period](https://leetcode.com/problems/list-the-products-ordered-in-a-period/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/list_of_product_ordered_in_a_period.sql)|
+|[Managers with at Least 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/manager_with_atleast_five_direct_report.sql)|
+|[Confirmation Rate](https://leetcode.com/problems/confirmation-rate/description/?envType=study-plan-v2&envId=top-sql-50)|[Solution](src/sql/confirmation_rate.sql)|
 
 |Hacker Rank |Code|
 |------------|---|

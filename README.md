@@ -23,6 +23,9 @@ Hello everyone :smile: , this repository holds all my work which I did during th
 1. **[Java](#day-5-java)**
 1. **[Docker](#docker)**
 1. **[Fast Api](#fast-api)**
+1. **[Fast Api](#study-material)**
+    1. [**Study-Material**](#study-material)
+    1. [**CRUD operation Project**](#project-on-fastapi-for-crud-operation)
 1. **[Pandas and SQL](#pandas-and-sql)**
 1. **[Assignments](#assignments)**
 
@@ -282,7 +285,7 @@ root@komal-VirtualBox:/home/komal/NucleusTeq-Training# docker push komal300902/m
 [YOUTUBE : FastAPI and MongoDB Connection | Channel Name : Eric Roby ](https://youtu.be/QkGqjPFIGCA?si=KU6rj2wynEWrjwg8)  
 [YOUTUBE : FastAPI Course | Channel Name : Bitfumes ](https://youtu.be/7t2alSnE2-I?si=XtAPQ1vvthdnoF68)   
 [FastAPI VS RouterAPI ](https://youtu.be/D-3JJLpECGQ?si=FZ_YQ07plJFTa4Iu)
-
+[Testing In FastAPI](https://fastapi.tiangolo.com/tutorial/testing/)
 
 #### FastAPI and MongoDB Connection 
 
@@ -311,7 +314,166 @@ INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 
 ```
+### Project On FastAPI for CRUD operation
 
+```File``` : [**Open**](src/api/myfirm/)
+
+```
+.
+├── myfirm
+│   ├── employees.sql
+│   ├── requirements.txt
+│   ├── main.py
+│   ├── test_main.py
+│   ├── route
+│   │   ├── route.py
+│   │   └── __init__.py
+│   ├── schema
+│   │   ├── schema.py
+│   │   └── __init__.py
+│   ├── config
+│   │   ├── databases.py
+│   │   └── __init__.py
+│   └── model
+        ├── modeles.py
+        └── __init__.py
+```
+```main.py```
+```python
+# importing the modules
+from fastapi import FastAPI
+from route.route import router
+app = FastAPI()
+
+@app.get("/")
+async def main():
+    return {"msg" : "Hey Everyone"}
+
+app.include_router(router)
+
+```
+```router.py```
+```python
+# importing the libreries
+from fastapi import APIRouter
+from config.databases import sql , cursor
+from model.models import Register
+from schema.schema import list_serial
+
+# creating APIRouter object
+router = APIRouter()
+
+@router.post("/")
+async def enter_employee_details(info : Register):
+    sql_query = f"INSERT INTO employees VALUES ('{info.emp_id}','{info.name}','{info.email}','{info.mobile}','{info.department}');"
+    try:
+        cursor.execute(sql_query)
+    except Exception as e:
+        print(e)
+    else:
+        sql.commit()
+        print("Record added successfully !!!")
+
+@router.get("/my_info")
+async def my_info():
+    result = []
+    sql_query = "SELECT * FROM employees;"
+    try:
+        cursor.execute(sql_query)
+    except Exception as e:
+        print(e.__context__)
+    else:
+        values = cursor.fetchall()
+        result = list_serial(values)
+
+    return result
+
+@router.put("/{emp_id}")
+async def update_name(emp_id : str,name : str):
+    sql_query = f"""UPDATE employees 
+    SET name = '{name}'
+    WHERE emp_id = '{emp_id}';"""
+    try:
+        cursor.execute(sql_query)
+        sql.commit()
+    except Exception as e:
+        
+        print(e)
+    else:
+        print("Record Updated Successfully !")
+
+@router.delete("/")
+async def delete_record(emp_id:str):
+    sql_query = f"DELETE FROM employees WHERE emp_id = '{emp_id}';"
+    try:
+        cursor.execute(sql_query)
+        sql.commit()
+    except Exception as e:
+        print(e)
+    else:
+        sql.commit()
+        print("Record deleted Successfully")
+
+
+```
+```Database Connection : databases.py```
+```python
+import mysql.connector as sql_connector
+
+try:
+    sql = sql_connector.connect(host = "localhost",user = "root", passwd = "", database = "nucleus_teq")
+    cursor = sql.cursor()
+except Exception as e:
+    print(e)
+else:
+    print("Successfully Connected !!!")
+```
+```schema.py```
+```python
+from typing import List
+
+def individual_serial(todo) -> dict:
+    dictionary = {
+        "emp_id" : todo[0],
+        "name" : todo[1],
+        "mail_id" : todo[2],
+        "mobile_number" : todo[3],
+        "department" : todo[4]
+    }
+    return dictionary
+
+def list_serial(todos) -> List[dict]:
+    output = [individual_serial(todo) for todo in todos]
+    return output
+```
+```Testing the Model : test_main.py```
+```python
+from fastapi.testclient import TestClient
+from main import app
+
+client = TestClient(app)
+
+def test_main():
+    response = client.get("/")
+    assert response.status_code == 200
+    print(response.json)
+
+def test_enter_employee_details():
+    response = client.post("/",
+                           json = {"emp_id": "SQA","name":"lares mortin","email": "kasde@gmail.com","mobile":"6266182634","department":"CSE"})
+    assert response.status_code == 200
+    print(response.json)
+
+def test_update_name():
+    response = client.put("/SQA?name=ljkl")
+    assert response.status_code == 200
+    print(response.json)
+
+def test_delete():
+    response = client.delete("/?emp_id=SQA")
+    assert response.status_code == 200
+
+```
 
 ## Pandas and Sql
 
