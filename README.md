@@ -22,9 +22,15 @@ Hello everyone :smile: , this repository holds all my work which I did during th
 1. **[Python](#day-4-python)**
 1. **[Java](#day-5-java)**
 1. **[Docker](#docker)**
+    1. [**Creating Image using Docker**](#1-creating-image-using-dockerfile)
+    1. [**Running the Image**](#running-the-image)
+    1. [**File inside the container**](#files-inside-the-container)
+    1. [**Seeing status of container**](#seeing-the-status-of-the-container)
+    1. [**Stoping Container**](#stoping-the-container)
+    1. [**Pushing Container to Docker Hub**](#pushing-image-to-docker-hub)
 1. **[Fast Api](#fast-api)**
-1. **[Fast Api](#study-material)**
     1. [**Study-Material**](#study-material)
+    1. [**FastAPI and MongoDB connection**](#fastapi-and-mongodb-connection)
     1. [**CRUD operation Project**](#project-on-fastapi-for-crud-operation)
 1. **[Pandas and SQL](#pandas-and-sql)**
 1. **[Assignments](#assignments)**
@@ -202,7 +208,7 @@ For More : [Click Here](JAVA.md)
 ## Docker
 [Documentation Link ](https://docs.docker.com/get-started/02_our_app/)
 
-## 1. Creating Image Using Dockerfile
+### 1. Creating Image Using Dockerfile
 
 [MY APP](src/docker/myapp/)
 
