@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Simple Blog{% endblock %}</title>
+</head>
+<body>
+    <h1>{% block heading %}Simple Blog{% endblock %}</h1>
+
+    {% block content %}
+    {% endblock %}
+
+    {% include "footer.html" %}
+</body>
+</html>

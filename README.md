@@ -14,6 +14,7 @@ Hello everyone :smile: , this repository holds all my work which I did during th
 
 1. [**MapReduce**](#assignments) **: -> Index->Assignments-> Assignment3 : Map Reduce**
 
+1. [**CRUD operation**](#project-on-fastapi-for-crud-operation)
 ## Index
 1. **[Introduction](#introduction)**
 1. **[Git and Github](#day-1-git-and-github)**
@@ -32,6 +33,9 @@ Hello everyone :smile: , this repository holds all my work which I did during th
     1. [**Study-Material**](#study-material)
     1. [**FastAPI and MongoDB connection**](#fastapi-and-mongodb-connection)
     1. [**CRUD operation Project**](#project-on-fastapi-for-crud-operation)
+    1. [**Data routing With Jinja Template without BaseModel**](FAST_API.md/#data-routing-with-jinjatemplate-whithout-basemodel)
+    1. [**Data routing With Jinja Template with BaseModel**](FAST_API.md/#data-routing-with-jinjatemplate-basemodel-included)
+    1. [**UnitTesting with FastAPI**](FAST_API.md/#testing-through-unittest)
 1. **[Pandas and SQL](#pandas-and-sql)**
 1. **[Assignments](#assignments)**
 
@@ -186,9 +190,20 @@ For more : [Click Here](SQL.md)
 
 Python is a open source , interpreted language that is used in various field such as machine learning , AI and Web.
 
+
+|LeetCode| Code |
+|--------|------|
+|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/description/)|[Solution](src/python/zigzag_convresion.py)|
+|[Longest Substring](https://leetcode.com/problems/zigzag-conversion/description/)| [Solution](src/python/longest_substring.py)|
+|[Remove Element](https://leetcode.com/problems/remove-element/description/)|[Solution](src/python/remove_element.py)|
+[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)|[Solution](src/python/remove_duplicate_from_sorted_array.py)|
+
 |Hacker Rank| Code |
 |-----------|------|
 |[Check Strict Superset](https://www.hackerrank.com/challenges/py-check-strict-superset/problem?isFullScreen=true)|[Solution](src/python/check_strict_superset.py)|
+|[Triangle Quest](https://www.hackerrank.com/challenges/python-quest-1/problem?isFullScreen=true)|[Solution](src/python/tringle_quest.py)|
+|[Mutations](https://www.hackerrank.com/challenges/python-mutations/problem?isFullScreen=true)|[Solution](src/python/mutation.py)|
+|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/)|[Solution](src/python/longest_common_prefix.py)|
 
 For More : [Click Here](PYTHON.md)
 
@@ -288,10 +303,15 @@ root@komal-VirtualBox:/home/komal/NucleusTeq-Training# docker push komal300902/m
 ## Fast API
 ### Study Material 
 
-[YOUTUBE : FastAPI and MongoDB Connection | Channel Name : Eric Roby ](https://youtu.be/QkGqjPFIGCA?si=KU6rj2wynEWrjwg8)  
-[YOUTUBE : FastAPI Course | Channel Name : Bitfumes ](https://youtu.be/7t2alSnE2-I?si=XtAPQ1vvthdnoF68)   
-[FastAPI VS RouterAPI ](https://youtu.be/D-3JJLpECGQ?si=FZ_YQ07plJFTa4Iu)
-[Testing In FastAPI](https://fastapi.tiangolo.com/tutorial/testing/)
+1. [**YOUTUBE : FastAPI and MongoDB Connection | Channel Name : Eric Roby**](https://youtu.be/QkGqjPFIGCA?si=KU6rj2wynEWrjwg8)   
+1. [**YOUTUBE : FastAPI Course | Channel Name : Bitfumes**](https://youtu.be/7t2alSnE2-I?si=XtAPQ1vvthdnoF68)   
+1. [**FastAPI VS RouterAPI**](https://youtu.be/D-3JJLpECGQ?si=FZ_YQ07plJFTa4Iu)   
+1. [**Testing In FastAPI**](https://fastapi.tiangolo.com/tutorial/testing/)   
+1. [**Jinja Documentation**](https://jinja.palletsprojects.com/en/2.11.x/templates/)   
+1. [**CRUD Operation using FastAPI**](https://apidog.com/blog/how-to-quickly-implement-crud-operations-with-fastapi/)    
+1. [**POST Operation | Jinja x FastAPI**](https://www.fastapitutorial.com/blog/fastapi-jinja-create-job-post/) 
+1. [**Create Dynamic WebPage Using FastAPI**](https://www.makeuseof.com/fastapi-jinja-templating-creating-dynamic-web-pages/)    
+1. [**Request Class In FastAPI**](https://fastapi.tiangolo.com/advanced/using-request-directly/)
 
 #### FastAPI and MongoDB Connection 
 
@@ -480,6 +500,7 @@ def test_delete():
     assert response.status_code == 200
 
 ```
+For more : [Click](FAST_API.md)
 
 ## Pandas and Sql
 

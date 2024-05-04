@@ -1,0 +1,4 @@
+DEBUG : [ log_file01 ] : 2024-04-25 13:57:09,955 : This message should go to the log file 
+INFO : [ log_file01 ] : 2024-04-25 13:57:09,955 : So should this 
+WARNING : [ log_file01 ] : 2024-04-25 13:57:09,955 : And this, too 
+ERROR : [ log_file01 ] : 2024-04-25 13:57:09,955 : And non-ASCII stuff, too, like Øresund and Malmö 

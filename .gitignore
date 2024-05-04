@@ -1,5 +1,4 @@
-surname.txt
 src/python/__pycache__
 src/api/myapplication/__pycache__
 src/api/myapplication/mycluster.txt
-
+src/api/registration/__pycache__

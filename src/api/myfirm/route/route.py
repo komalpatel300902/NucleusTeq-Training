@@ -30,6 +30,19 @@ async def my_info():
 
     return result
 
+@router.head("/my_info")
+async def my_info():
+    result = []
+    sql_query = "SELECT m FROM employees;"
+    try:
+        cursor.execute(sql_query)
+    except Exception as e:
+        print(e.__context__)
+    else:
+        values = cursor.fetchall()
+        result = list_serial(values)
+    return None
+
 @router.put("/{emp_id}")
 async def update_name(emp_id : str,name : str):
     sql_query = f"""UPDATE employees 

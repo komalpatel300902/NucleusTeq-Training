@@ -3,10 +3,11 @@
 Python is a open source , interpreted language that is used in various field such as machine learning , AI and Web.
 
 ### Index
-1. [Regular Expression](#regexp)
-1. [Unit Testing](#unit-testing)
-1. [My sql Database Connecton](#mysql-connection-using-python)
-1. [Pandas](#pandas)
+1. [**Regular Expression**](#regexp)
+1. [**Unit Testing**](#unit-testing)
+1. [**My sql Database Connecton**](#mysql-connection-using-python)
+1. [**Pandas**](#pandas)
+1. [**FastAPI**](#fast-api)
 
 <details>
 <summary>Study Material</summary>
