@@ -36,6 +36,8 @@ Hello everyone :smile: , this repository holds all my work which I did during th
     1. [**Data routing With Jinja Template without BaseModel**](FAST_API.md/#data-routing-with-jinjatemplate-whithout-basemodel)
     1. [**Data routing With Jinja Template with BaseModel**](FAST_API.md/#data-routing-with-jinjatemplate-basemodel-included)
     1. [**UnitTesting with FastAPI**](FAST_API.md/#testing-through-unittest)
+    1. [**Problem related to HTTP methods**](FAST_API.md/#problem-related-http-method)
+    1. [**Connecting Frontend and API using Javascript**](FAST_API.md/#connecting-frontend-and-api-using-javascript)
 1. **[Pandas and SQL](#pandas-and-sql)**
 1. **[Assignments](#assignments)**
 

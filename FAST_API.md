@@ -1,5 +1,18 @@
 
 ## Fast API
+FastAPI is a high-performance `web framework` for building APIs in Python. It offers rapid development with intuitive APIs and automatic documentation generation. Leveraging `asynchronous programming`, it ensures fast response times even under heavy loads. With built-in data validation, security features, and `WebSocket support`, FastAPI simplifies API development while promoting scalability and reliability.
+
+## Index
+1. [**Study-Material**](#study-material)
+1. [**FastAPI and MongoDB connection**](#fastapi-and-mongodb-connection)
+1. [**CRUD operation Project**](#project-on-fastapi-for-crud-operation)
+1. [**Data routing With Jinja Template without BaseModel**](#data-routing-with-jinjatemplate-whithout-basemodel)
+1. [**Data routing With Jinja Template with BaseModel**](FAST_API.md/#data-routing-with-jinjatemplate-basemodel-included)
+1. [**UnitTesting with FastAPI**](#testing-through-unittest)
+1. [**Problem related to HTTP methods**](#problem-related-http-method)
+1. [**Connecting Frontend and API using Javascript**](#connecting-frontend-and-api-using-javascript)
+
+
 ### Study Material 
 
 1. [**YOUTUBE : FastAPI and MongoDB Connection | Channel Name : Eric Roby**](https://youtu.be/QkGqjPFIGCA?si=KU6rj2wynEWrjwg8)   
@@ -15,6 +28,7 @@
 1. [**Testing for Form(...)**](https://github.com/tiangolo/fastapi/issues/1772)
 1. [**FastAPI | TutorialPoint**](https://www.tutorialspoint.com/fastapi/fastapi_accessing_form_data.htm)
 1. [**FastAPI Form Data: Handling Form Data Using Pydantic Models**](https://www.getorchestra.io/guides/fastapi-form-data-handling-form-data-using-pydantic-models)
+1. [**All abot fetch() Method**](https://www.geeksforgeeks.org/javascript-fetch-method/)
 
 #### FastAPI and MongoDB Connection 
 
@@ -533,3 +547,152 @@ class UploadTest(unittest.TestCase):
         self.assertEqual(status.HTTP_200_OK, res.status_code)
         MyResponseModel.parse_obj(res.json()["data"])
 ```  
+### Problem Related HTTP Method
+**`Problem Statement`** : For example we have 4 method `@app.post("/index")`,  <br> `@app.get("/index")`, <br> `@app.put("/index/{empi_id}")`,<br> `@app.delete("/index/{emp_id}")`
+
+How the api will know which method will be called if we click button of `delete` , `update` or `submit`.
+
+We use for this type of binding : 
+```HTML
+<script>
+    function deleteEmployee(empId) {
+        if (confirm("Are you sure you want to delete this employee?")) {
+            fetch("/delete_emp/"+empId,{method: "DELETE"})
+            alert("Employee with ID " + empId + " deleted successfully!");
+        }
+    }
+</script>
+```
+### Connecting Frontend and API using Javascript
+
+This section holds the solution of above problem that what if the path of `get` `post` `delete` `put` is same.
+
+**`Conclusion`** :  You can have multiple http method having same path but you must specify the method and path fetch method.
+
+**`File`** : [**OPEN**](src/api/api_and_frontend_connection/)
+```
+.
+├── registration
+│   ├── main.py
+│   ├── static
+│   ├── templates
+│   │   └── index.html
+
+        
+```
+**`main.py`**
+```python
+from fastapi import FastAPI, HTTPException , Request ,Form
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
+from fastapi.encoders import jsonable_encoder
+import json
+from fastapi.responses import HTMLResponse , JSONResponse
+app = FastAPI()
+
+items = [{"id":1,"name":"mango"}]
+app.mount("/static", StaticFiles(directory = "static"),name = "static")
+templates = Jinja2Templates(directory= "templates")
+@app.get("/items/",response_class=HTMLResponse)
+async def read_item(request: Request):
+    return templates.TemplateResponse("index.html",{"request": request})
+
+@app.post("/items/",response_class = HTMLResponse)
+async def create_item(request: Request, item_name: str):
+    new_item_id = len(items) + 1
+    new_item = {"id": new_item_id, "name": item_name}
+    items.append(new_item)
+    print(items)
+    return json.dumps(new_item)
+
+@app.put("/items/{item_id}",response_class = HTMLResponse)
+async def update_item(request: Request,item_id: int, item_name: str ):
+    for item in items:
+        if item["id"] == item_id:
+            item["name"] = item_name
+            return json.dumps(item)
+    raise HTTPException(status_code=404, detail="Item not found")
+
+@app.delete("/items/{item_id}",response_class = HTMLResponse)
+async def delete_item(request: Request,item_id: int):
+    for index, item in enumerate(items):
+        if item["id"] == item_id:
+            del items[index]
+            return json.dumps({"message": "Item deleted successfully"})
+    raise HTTPException(status_code=404, detail="Item not found")
+
+@app.get("/items/{item_id}",response_class = HTMLResponse)
+async def read_item(request: Request,item_id: int):
+    print(items[item_id])
+    return json.dumps(items[item_id])
+```
+
+**`index.html`**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI CRUD Example</title>
+</head>
+<body>
+    <h1>FastAPI CRUD Example</h1>
+
+    <h2>Create Item:</h2>
+    <input type="text" id="itemNameInput" placeholder="Enter Item Name">
+    <button onclick="createItem()">Create Item</button>
+
+    <h2>Update Item:</h2>
+    <input type="number" id="updateItemIdInput" placeholder="Enter Item ID">
+    <input type="text" id="updateItemNameInput" placeholder="Enter Updated Name">
+    <button onclick="updateItem()">Update Item</button>
+
+    <h2>Delete Item:</h2>
+    <input type="number" id="deleteItemIdInput" placeholder="Enter Item ID">
+    <button onclick="deleteItem()">Delete Item</button>
+
+    <h2>Get Item:</h2>
+    <input type="number" id="getItemIdInput" placeholder="Enter Item ID">
+    <button onclick="getItem()">Get Item</button>
+
+    <div id="response"></div>
+
+    <script>
+        function fetchResponse(response) {
+            const responseDiv = document.getElementById('response');
+            responseDiv.innerHTML = `<p>${response}</p>`;
+        }
+
+        function createItem() {
+            const itemName = document.getElementById('itemNameInput').value;
+            console.log(itemName);
+            fetch('/items/?item_name='+itemName, {method: 'POST'});
+        }
+
+        function updateItem() {
+            const itemId = document.getElementById('updateItemIdInput').value;
+            const itemName = document.getElementById('updateItemNameInput').value;
+            fetch(`/items/${itemId}?item_name=${itemName}`, {
+                method: 'PUT'
+            });
+        }
+        function deleteItem() {
+            const itemId = document.getElementById('deleteItemIdInput').value;
+            fetch(`/items/${itemId}`, {
+                method: 'DELETE',
+            })
+            .then(response => response.json())
+            .then(data => fetchResponse(JSON.stringify(data)))
+            .catch(error => fetchResponse('Error: ' + error.message));
+        }
+
+        function getItem() {
+            const itemId = document.getElementById('getItemIdInput').value;
+            fetch(`/items/${itemId}`,{method:"GET"});
+        }
+    </script>
+</body>
+</html>
+
+```

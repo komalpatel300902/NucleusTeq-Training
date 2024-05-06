@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Details</title>
+<script>
+function submitForm() {
+  var empId = document.getElementById("emp_id").value;
+  var name = document.getElementById("name").value;
+
+  // You can perform validation here if needed
+
+  // Example: Check if fields are not empty
+  if(empId.trim() === '' || name.trim() === '') {
+    alert("Please fill out all fields");
+    return false; // Prevent form submission
+  }
+
+  // If validation passes, you can perform further actions here, such as sending data to server
+  var path = "/update/" + empId + "?name=" + name;
+  console.log("Path : " + path);
+  fetch(path,{method:"PUT"})
+  // For this example, we'll just log the values
+  console.log("Employee ID: " + empId);
+  console.log("Name: " + name);
+
+  // Optionally, you can clear the form after submission
+  document.getElementById("emp_id").value = '';
+  document.getElementById("name").value = '';
+
+  // Prevent form from submitting in this example
+  return false;
+}
+</script>
+</head>
+<body>
+
+<h2>Employee Details</h2>
+
+<form onsubmit="return submitForm()">
+  <label for="emp_id">Employee ID:</label><br>
+  <input type="text" id="emp_id" name="emp_id"><br>
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>

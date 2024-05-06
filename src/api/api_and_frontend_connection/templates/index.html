@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI CRUD Example</title>
+</head>
+<body>
+    <h1>FastAPI CRUD Example</h1>
+
+    <h2>Create Item:</h2>
+    <input type="text" id="itemNameInput" placeholder="Enter Item Name">
+    <button onclick="createItem()">Create Item</button>
+
+    <h2>Update Item:</h2>
+    <input type="number" id="updateItemIdInput" placeholder="Enter Item ID">
+    <input type="text" id="updateItemNameInput" placeholder="Enter Updated Name">
+    <button onclick="updateItem()">Update Item</button>
+
+    <h2>Delete Item:</h2>
+    <input type="number" id="deleteItemIdInput" placeholder="Enter Item ID">
+    <button onclick="deleteItem()">Delete Item</button>
+
+    <h2>Get Item:</h2>
+    <input type="number" id="getItemIdInput" placeholder="Enter Item ID">
+    <button onclick="getItem()">Get Item</button>
+
+    <div id="response"></div>
+
+    <script>
+        function fetchResponse(response) {
+            const responseDiv = document.getElementById('response');
+            responseDiv.innerHTML = `<p>${response}</p>`;
+        }
+
+        function createItem() {
+            const itemName = document.getElementById('itemNameInput').value;
+            console.log(itemName);
+            fetch('/items/?item_name='+itemName, {method: 'POST'});
+        }
+
+        function updateItem() {
+            const itemId = document.getElementById('updateItemIdInput').value;
+            const itemName = document.getElementById('updateItemNameInput').value;
+            fetch(`/items/${itemId}?item_name=${itemName}`, {
+                method: 'PUT'
+            });
+        }
+        function deleteItem() {
+            const itemId = document.getElementById('deleteItemIdInput').value;
+            fetch(`/items/${itemId}`, {
+                method: 'DELETE',
+            })
+            .then(response => response.json())
+            .then(data => fetchResponse(JSON.stringify(data)))
+            .catch(error => fetchResponse('Error: ' + error.message));
+        }
+
+        function getItem() {
+            const itemId = document.getElementById('getItemIdInput').value;
+            fetch(`/items/${itemId}`,{method:"GET"});
+        }
+    </script>
+</body>
+</html>
