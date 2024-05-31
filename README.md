@@ -8,6 +8,7 @@ Hello everyone :smile: , this repository holds all my work which I did during th
 <a href = "https://www.hackerrank.com/profile/komal14march2002"><img src ="images/Hackerrank.png" width = "42" alt = "LeetCode" style = "border-radius: 50%"> </a>
 
 **Pinned**   
+1. [**`NucleusTeq Capstone Project`**](https://github.com/komalpatel300902/NucleusTeq-Capstone-Project)
 1. [**Greek Gods Assignment**](src/python/pandas_library/greek_gods_exam.ipynb)
 
 1. [**mysql Connection using Python**](PYTHON.md#mysql-connection-using-python)
@@ -38,6 +39,7 @@ Hello everyone :smile: , this repository holds all my work which I did during th
     1. [**UnitTesting with FastAPI**](FAST_API.md/#testing-through-unittest)
     1. [**Problem related to HTTP methods**](FAST_API.md/#problem-related-http-method)
     1. [**Connecting Frontend and API using Javascript**](FAST_API.md/#connecting-frontend-and-api-using-javascript)
+    1. [**Connecting BaseModel with Javascript**](FAST_API.md/#connecting-basemodel-with-javascript)
 1. **[Pandas and SQL](#pandas-and-sql)**
 1. **[Assignments](#assignments)**
 
